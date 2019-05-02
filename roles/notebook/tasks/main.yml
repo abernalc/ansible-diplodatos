@@ -1,0 +1,14 @@
+---
+- name: Update repositories cache
+  yum:
+    update_cache: yes
+
+- name: Install vim java epel-release python-pip bzip2 git
+  yum:
+    name: 
+      - vim
+      - java
+      - epel-release
+      - bzip2
+      - git
+    state: present
