@@ -1,7 +1,7 @@
 ---
-- name: Update repositories cache
-  yum:
-    update_cache: yes
+#- name: Update repositories cache
+#  yum:
+#    update_cache: yes
 
 - name: Install vim java epel-release python-pip bzip2 git
   yum:
@@ -11,4 +11,6 @@
       - epel-release
       - bzip2
       - git
+      - zip
+      - unzip
     state: present
